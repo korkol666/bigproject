@@ -11,6 +11,7 @@
 </head>
 <body>
 <div id="logindiv">
+<div style="color:red;">${msg}</div>
 <h3>东软云his系统用户登录</h3>
 <form class="form-horizontal" action="" method="post">
   <div class="form-group">
