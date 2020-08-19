@@ -1,5 +1,7 @@
 package com.neuedu.mapper;
 
+import java.util.List;
+
 import com.neuedu.pojo.Menu;
 
 public interface MenuMapper {
@@ -14,4 +16,6 @@ public interface MenuMapper {
     int updateByPrimaryKeySelective(Menu record);
 
     int updateByPrimaryKey(Menu record);
+    
+    List<Menu> findMenuByUname(String uname);
 }
