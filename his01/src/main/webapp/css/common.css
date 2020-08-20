@@ -8,11 +8,15 @@
 }
 
 #nav>ul>li{
-	border-bottom:1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+.main{
+	position: absolute;
+	top:60px;
+	left:200px;
 }
 
-.main{
-	position:absolute;
-	top:60px;
-	left:220px;
+
+.datatable{
+	width:80%;
 }

@@ -1,5 +1,7 @@
 package com.neuedu.mapper;
 
+import java.util.List;
+
 import com.neuedu.pojo.User;
 
 public interface UserMapper {
@@ -15,5 +17,11 @@ public interface UserMapper {
 
     int updateByPrimaryKey(User record);
     
+    
     User findUserByUnamePwd(User user);
+    
+    
+    List<User> findUsers(User user);
+    
+    int findCount(User user);
 }

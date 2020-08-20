@@ -10,6 +10,7 @@ public class IndexController {
 	@RequestMapping("index.do")
 	public ModelAndView index() {
 		ModelAndView mv = new ModelAndView();
+		
 		mv.setViewName("index.jsp");
 		return mv;
 	}

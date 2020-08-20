@@ -21,9 +21,8 @@
 	<mvc:interceptors>
 		<mvc:interceptor>
 			<mvc:mapping path="/**"/>
-			<bean class="com.neuedu.util.LoginCheck"></bean>
+			<bean class="com.neuedu.util.LoginCheck"/>
 		</mvc:interceptor>
 	</mvc:interceptors>
-
 
 </beans>

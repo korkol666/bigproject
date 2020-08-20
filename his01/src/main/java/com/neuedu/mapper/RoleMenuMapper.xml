@@ -21,10 +21,8 @@
     where rmid = #{rmid,jdbcType=INTEGER}
   </delete>
   <insert id="insert" parameterType="com.neuedu.pojo.RoleMenu" >
-    insert into role_menu (rmid, roleid, menuid, 
-      delmark)
-    values (#{rmid,jdbcType=INTEGER}, #{roleid,jdbcType=INTEGER}, #{menuid,jdbcType=INTEGER}, 
-      #{delmark,jdbcType=INTEGER})
+    insert into role_menu ( roleid, menuid)
+    values ( #{roleid,jdbcType=INTEGER}, #{menuid,jdbcType=INTEGER})
   </insert>
   <insert id="insertSelective" parameterType="com.neuedu.pojo.RoleMenu" >
     insert into role_menu
@@ -78,5 +76,14 @@
       menuid = #{menuid,jdbcType=INTEGER},
       delmark = #{delmark,jdbcType=INTEGER}
     where rmid = #{rmid,jdbcType=INTEGER}
+  </update>
+  
+  
+  <update id="deleteByRoleidMenuid" parameterType="com.neuedu.pojo.RoleMenu">
+  	update role_menu
+  	set delmark = 1
+  	where roleid = #{roleid}
+  	and menuid=#{menuid}
+  
   </update>
 </mapper>
